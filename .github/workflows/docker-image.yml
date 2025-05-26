@@ -19,7 +19,7 @@ jobs:
     - name: Push to docker hub
       run: 
         #docker login --help
-        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_HUB_SECRET }} registry-1.docker.io
+        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_HUB_SECRET }} registry.hub.docker.com/teena23/teena23_node.js:latest
         docker push teena23/teena23_node.js:latest
 
 
