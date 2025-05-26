@@ -25,10 +25,10 @@ jobs:
       with:
         push: true
         tags: ${{ github.repository }}:${{ github.sha }}  # Tag with commit SHA
-        context: . --file Dockerfile  # Build 
+        context: . #--file Dockerfile  # Build 
     #- name: Build the Docker image
       #run: docker build . --file Dockerfile --tag teena23/node.js:latest
-    - #name: Push to docker hub
+    #- name: Push to docker hub
       #uses: docker/build-push-action@v6
       #with: 
         #docker login --help
