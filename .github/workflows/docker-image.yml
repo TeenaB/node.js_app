@@ -20,4 +20,6 @@ jobs:
       run: 
         docker login --help
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_HUB_SECRET }}
-        docker push teena23/node.js:latest
+        docker push teena23/teena23_node.js:latest
+
+
