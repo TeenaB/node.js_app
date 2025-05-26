@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Use index.js
+      - name: Use index.js ${{ matrix.node-version }}
         with:
           node-version: 20
       - run: node --version
